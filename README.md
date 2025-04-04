@@ -2,9 +2,13 @@
 
 This mod is a basic MSAA disabler for Synth Riders.
 
+## Why?
+
 Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
 
-While it would be possible for a mod to fix this button, I decided to keep it simple and disable MSAA entirely. 
+Having MSAA running at 4x, especially in VR, is and can be very resource intensive.
+
+While it would be possible for a mod to fix this button itself, I decided to keep it simple and completely disable MSAA. 
 
 (totally because its out-of-scope and not because i can barely program)
 
