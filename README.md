@@ -2,7 +2,11 @@
 
 This is a basic MSAA disabler for Synth Riders.
 
-Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option in the advanced settings menu existing--changing it does nothing.
+Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
+
+While it would be possible for a mod to fix this button, I decided to keep it simple and disable MSAA entirely. 
+
+(totally because its out-of-scope and not because i can barely program)
 
 ## What does the mod do?
 
@@ -15,16 +19,18 @@ Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option
 
 ## Installation
 
-Make sure you have [MelonLoader](https://melonwiki.xyz/) installed, insructions can be found here - [https://wiki.synthriderz.com/en/guides/installing-mods](https://wiki.synthriderz.com/en/guides/installing-mods)
+1. Make sure you have [MelonLoader](https://melonwiki.xyz/) installed, instructions can be found here - [https://wiki.synthriderz.com/en/guides/installing-mods](https://wiki.synthriderz.com/en/guides/installing-mods)
 
-Next, grab the latest mod version from the [Releases](https://github.com/kirtide/SynthMSAADisabler/releases) section, and place the '.dll' file in your 'SynthRiders/Mods/' folder.
+22. Next, grab the latest mod version from the [Releases](https://github.com/kirtide/SynthMSAADisabler/releases) section, and place the '.dll' file in your 'SynthRiders/Mods/' folder.
 
-Launch the game and check the MelonLoader console for logs like:
+3. Launch the game and check the MelonLoader console for logs like:
 
 - [XX:XX:XX] Found pipeline: Ultra_PipelineAsset
 - [XX:XX:XX] Boot MSAA is: 4
 - [XX:XX:XX] MSAA set to: 1 (Disabled)
 
-This will confirm MSAA has been disabled.
+This will confirm MSAA has been disabled!
 
-##
+## Special Thanks
+
+- [UnityExplorer](https://github.com/sinai-dev/UnityExplorer)
