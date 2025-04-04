@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B36A3BBF-711F-472D-AD43-8044A9CD8F02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Force_MSAA</RootNamespace>
+    <AssemblyName>Force_MSAA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Disable_MSAA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAIToASE">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppAIToASE.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAmplifyImpostors">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppAmplifyImpostors.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cpparcade_success">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2Cpparcade_success.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppAssistantCoreSDKRuntime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppAssistantCoreSDKRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBakeryRuntimeAssembly">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppBakeryRuntimeAssembly.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBeautify.Universal.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppBeautify.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBhaptics.SDK2">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppBhaptics.SDK2.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBhaptics.Tact">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppBhaptics.Tact.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBoxophobic.AtmosphericHeightFog.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppBoxophobic.AtmosphericHeightFog.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppBoxophobic.Utils.Scripts">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppBoxophobic.Utils.Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppCinemachine">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppCinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppcom.rlabrecque.steamworks.net">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2Cppcom.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppCore">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppDOTween">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppDOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFacebook.Wit.Dictation">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppFacebook.Wit.Dictation.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFastSpringBone">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppFastSpringBone.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFastSpringBone10">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppFastSpringBone10.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFlatKit.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppFlatKit.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppFraktalGenerator">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppFraktalGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppI18N">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppI18N.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppI18N.MidEast">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppI18N.MidEast.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppI18N.Other">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppI18N.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppI18N.Rare">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppI18N.Rare.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppI18N.West">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppI18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Generator">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\net6\Il2CppInterop.Generator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.HarmonySupport">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\net6\Il2CppInterop.HarmonySupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppIonic.Zip.Unity">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppIonic.Zip.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppIPC">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppIPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppLIV">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppLIV.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmaterial-timeline">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2Cppmaterial-timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeshBakerCore">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeshBakerCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeshBakerExamples">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeshBakerExamples.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Hub.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Hub.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.BuiltInTimer">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.BuiltInTimer.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.Chess">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.Chess.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.Dictation">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.Dictation.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.LightTraits">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.LightTraits.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.LiveUnderstanding">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.LiveUnderstanding.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.Shapes">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.Shapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.ShapesConduit">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.ShapesConduit.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.Voice.Samples.TTSVoices">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.Voice.Samples.TTSVoices.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.VoiceSDK.Mic.Common">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.VoiceSDK.Mic.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.VoiceSDK.Mic.Other">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.VoiceSDK.Mic.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.WitAi">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.WitAi.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.WitAi.Conduit">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.WitAi.Conduit.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.WitAi.Lib">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.WitAi.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMeta.WitAi.TTS">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMeta.WitAi.TTS.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.CSharp">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMicrosoft.Extensions.Logging.Abstractions">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMicrosoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Data.Sqlite">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMToon">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppMToon.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppNewtonsoft.Json">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppNobi.UiRoundedCorners">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppNobi.UiRoundedCorners.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.AudioManager">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.AudioManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.AvatarSDK2">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.AvatarSDK2.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.AvatarSDK2.Example">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.AvatarSDK2.Example.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.Interaction">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.Interaction.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.Interaction.OVR">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.Interaction.OVR.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.Interaction.OVR.Samples">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.Interaction.OVR.Samples.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.LipSync">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.LipSync.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.Platform">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.Spatializer">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.Spatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppOculus.VR">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppOculus.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPathCreator">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPathCreator.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPerfectCulling">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPerfectCulling.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhoton3Unity3D">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhoton3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonChat">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonChat.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonRealtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonRealtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonUnityNetworking">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonUnityNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonUnityNetworking.Demos">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonUnityNetworking.Demos.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonUnityNetworking.Utilities">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonUnityNetworking.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonVoice">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonVoice.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonVoice.API">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonVoice.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppPhotonVoice.PUN">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppPhotonVoice.PUN.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppRowlan.YAPP.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppRowlan.YAPP.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSpaceGraphicsToolkit">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSpaceGraphicsToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSpaceGraphicsToolkit.Terrain">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSpaceGraphicsToolkit.Terrain.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Data">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Drawing">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Net.Http">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.Serialization">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Transactions">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml.Linq">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTayx.Graphy">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTayx.Graphy.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api.Core">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api.Core.Enums">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.Core.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api.Core.Interfaces">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.Core.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api.Core.Models">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.Core.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api.Helix">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.Helix.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Api.Helix.Models">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Api.Helix.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Client">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Client.Enums">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Client.Enums.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Client.Models">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Client.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.Communication">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppTwitchLib.PubSub">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppTwitchLib.PubSub.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppUniGLTF">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppUniGLTF.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppUniGLTF.Utils">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppUniGLTF.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppUniHumanoid">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppUniHumanoid.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVoiceSDK.Dictation.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVoiceSDK.Dictation.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVoiceSDK.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVoiceSDK.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRM">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRM.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRM10">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRM10.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVrmLib">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVrmLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRMShaders.GLTF.IO.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRMShaders.GLTF.IO.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRMShaders.GLTF.UniUnlit.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRMShaders.GLTF.UniUnlit.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRMShaders.VRM.IO.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRMShaders.VRM.IO.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRMShaders.VRM10.Format.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRMShaders.VRM10.Format.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppVRMShaders.VRM10.MToon10.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2CppVRMShaders.VRM10.MToon10.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cpp__Generated">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Il2Cpp__Generated.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\net6\MelonLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>V:\SteamLibrary\steamapps\common\SynthRiders\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
