@@ -1,6 +1,6 @@
 # SynthMSAADisabler
 
-This is a basic MSAA disabler for Synth Riders.
+This mod is a basic MSAA disabler for Synth Riders.
 
 Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
 
