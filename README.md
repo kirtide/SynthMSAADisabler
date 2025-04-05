@@ -14,9 +14,10 @@ While it would be possible for a mod to fix this button itself, I decided to kee
 
 Additionally, this mod could possibly be used with other Unity games. For this it would likely need to meet the following criteria:
 
-- MelonLoader v0.6.6
-- Game type is Il2cpp
-- Game runtime type is net6
+- Installed `MelonLoader v0.6.6`
+- Game type is `Il2cpp`
+- Game runtime type is `net6`
+- Active pipeline is `Ultra`
 
 ## What does the mod do?
 
