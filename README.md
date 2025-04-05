@@ -29,7 +29,7 @@ This might also help other Unity games if they:
 
 ## Installation
 
-1. Make sure you have [MelonLoader](https://melonwiki.xyz/) installed (at least `v0.6.6`), instructions can be found here - [https://wiki.synthriderz.com/en/guides/installing-mods](https://wiki.synthriderz.com/en/guides/installing-mods)
+1. Make sure you have [MelonLoader](https://melonwiki.xyz/) installed (at least `v0.6.6`), *Synth Riders* specific instructions can be found here - [https://wiki.synthriderz.com/en/guides/installing-mods](https://wiki.synthriderz.com/en/guides/installing-mods)
 
 2. Next, grab the latest mod version from the [Releases](https://github.com/kirtide/SynthMSAADisabler/releases) section, and place the `MSAA_Disabler.dll` file in your `SynthRiders/Mods/` folder.
 
