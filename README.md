@@ -4,20 +4,15 @@ This mod is a basic MSAA disabler for *Synth Riders*, and potentially other Unit
 
 ## Why?
 
-Since the `v3` release of *Synth Riders*, MSAA is "baked" at `4x`. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
+Since the `v3` release of *Synth Riders*, MSAA defaults to `4x`. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
 
-Having MSAA running at `4x`, especially in VR, is and can be very resource intensive. (VRAM, among other things)
+In VR, `4x` MSAA can be resource intensive (VRAM and more), so this mod offers a quick workaround by turning it off.
 
-While it would be possible for a mod to fix this button itself, I decided to keep it simple and completely disable MSAA. 
-
-(totally because its out-of-scope and not because i can barely program)
-
-Additionally, this mod could possibly be used with other Unity games. For this it would likely need to meet the following criteria:
-
-- Installed `MelonLoader v0.6.6`
-- Game type is `Il2cpp`
-- Game runtime type is `net6`
-- Active pipeline is `Ultra`
+This might also help other Unity games if they:
+- Use MelonLoader v0.6.6+
+- Are IL2CPP-based
+- Run on .NET 6
+- Use a pipeline named `Ultra_PipelineAsset`
 
 ## What does the mod do?
 
@@ -26,7 +21,7 @@ Additionally, this mod could possibly be used with other Unity games. For this i
 3. **Targets the PC Pipeline**: Loops through the list and checks each pipeline’s name. Specifically matches `Ultra_PipelineAsset`—the one *Synth Riders* uses for PC—it stops there.
 4. **Checks MSAA**: Prints the current/cold-boot MSAA setting (e.g., 4 for `4x`) to the MelonLoader console.
 5. **Disables MSAA**: If MSAA isn’t already off, the mod sets it to `Disabled` (value 1), prints the change to console, and stops.
-6. **Skips if Not Found**: If `Ultra_PipelineAsset` isn’t there (rare), it prints a message and quits trying (i think).
+6. **Skips if Not Found**: If `Ultra_PipelineAsset` isn’t there (unlikely), it prints a message and quits trying (i think).
 
 ## Installation
 
