@@ -6,11 +6,17 @@ This mod is a basic MSAA disabler for Synth Riders.
 
 Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
 
-Having MSAA running at 4x, especially in VR, is and can be very resource intensive.
+Having MSAA running at 4x, especially in VR, is and can be very resource intensive. (VRAM, among other things)
 
 While it would be possible for a mod to fix this button itself, I decided to keep it simple and completely disable MSAA. 
 
 (totally because its out-of-scope and not because i can barely program)
+
+Additionally, this mod could possibly be used with other Unity games. For this it would likely need to meet the following criteria:
+
+- MelonLoader v0.6.6
+- Game type is Il2cpp
+- Game runtime type is net6
 
 ## What does the mod do?
 
