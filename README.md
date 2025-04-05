@@ -1,6 +1,6 @@
 # SynthMSAADisabler
 
-A simple MelonLoader mod to disable MSAA in *Synth Riders* on PC, with potential use in other Unity games.
+A simple MelonLoader mod to disable MSAA in *Synth Riders* `v3` on PC, with potential use in other Unity games.
 
 ## Why?
 
