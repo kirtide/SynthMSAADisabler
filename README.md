@@ -4,7 +4,7 @@ A simple MelonLoader mod to disable MSAA in *Synth Riders* `v3` on PC, with pote
 
 ## Why?
 
-Since the `v3` release of *Synth Riders*, MSAA defaults to `4x`. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
+Since the `v3` release of *Synth Riders*, MSAA defaults to `4x`. Despite the MSAA option within the `advanced graphics settings` menu existing-changing it does nothing.
 
 In VR, `4x` MSAA can be resource intensive (VRAM and more), so this mod offers a quick workaround by turning it off.
 
