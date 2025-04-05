@@ -19,7 +19,7 @@ This might also help other Unity games if they:
    
 2. **Finds All Pipelines**: Calls `Resources.FindObjectsOfTypeAll<UniversalRenderPipelineAsset>()` to list all URP assets in memory.
    
-3. **Targets the PC Pipeline**: Loops through, stops at `Ultra_PipelineAsset`—what *Synth Riders* uses for PC, then prints to console.
+3. **Targets the PC Pipeline**: Loops through, stops at `Ultra_PipelineAsset`——what *Synth Riders* uses for PC, then prints to console.
    
 4. **Checks MSAA**: Prints the starting MSAA value (e.g., `4` for `4x`).
    
