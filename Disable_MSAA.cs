@@ -29,7 +29,7 @@ namespace SynthMSAA
                     if (urpAsset.msaaSampleCount != (int)MsaaQuality.Disabled) //simple int check
                     {
                         urpAsset.msaaSampleCount = (int)MsaaQuality.Disabled; //sets the integer value to 1
-                        MelonLogger.Msg($"MSAA set to Disabled ({urpAsset.msaaSampleCount})");
+                        MelonLogger.Msg($"MSAA set to: {urpAsset.msaaSampleCount} (Disabled)");
                         noMSAA = true; //properly disabled
                     }
                     else
