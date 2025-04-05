@@ -45,4 +45,3 @@ This will confirm MSAA has been disabled!
 ## Special Thanks
 
 - [UnityExplorer](https://github.com/sinai-dev/UnityExplorer)
-- [xAI](https://x.ai/)
