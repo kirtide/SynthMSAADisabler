@@ -1,10 +1,10 @@
 # SynthMSAADisabler
 
-This mod is a basic MSAA disabler for *Synth Riders*.
+This mod is a basic MSAA disabler for *Synth Riders*, and potentially other Unity games.
 
 ## Why?
 
-Since the `v3` release of the game, MSAA is "baked" at `4x`. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
+Since the `v3` release of *Synth Riders*, MSAA is "baked" at `4x`. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
 
 Having MSAA running at `4x`, especially in VR, is and can be very resource intensive. (VRAM, among other things)
 
@@ -30,7 +30,7 @@ Additionally, this mod could possibly be used with other Unity games. For this i
 
 ## Installation
 
-1. Make sure you have [MelonLoader](https://melonwiki.xyz/) installed, instructions can be found here - [https://wiki.synthriderz.com/en/guides/installing-mods](https://wiki.synthriderz.com/en/guides/installing-mods)
+1. Make sure you have [MelonLoader](https://melonwiki.xyz/) installed (at least `v0.6.6`), instructions can be found here - [https://wiki.synthriderz.com/en/guides/installing-mods](https://wiki.synthriderz.com/en/guides/installing-mods)
 
 22. Next, grab the latest mod version from the [Releases](https://github.com/kirtide/SynthMSAADisabler/releases) section, and place the '.dll' file in your 'SynthRiders/Mods/' folder.
 
