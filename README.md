@@ -1,12 +1,12 @@
 # SynthMSAADisabler
 
-This mod is a basic MSAA disabler for Synth Riders.
+This mod is a basic MSAA disabler for *Synth Riders*.
 
 ## Why?
 
-Since the v3 release of the game, MSAA is "baked" at 4x. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
+Since the `v3` release of the game, MSAA is "baked" at `4x`. Despite the MSAA option within the advanced graphics settings menu existing-changing it does nothing.
 
-Having MSAA running at 4x, especially in VR, is and can be very resource intensive. (VRAM, among other things)
+Having MSAA running at `4x`, especially in VR, is and can be very resource intensive. (VRAM, among other things)
 
 While it would be possible for a mod to fix this button itself, I decided to keep it simple and completely disable MSAA. 
 
@@ -23,7 +23,7 @@ Additionally, this mod could possibly be used with other Unity games. For this i
 
 1. **Waits for the initial scene to Load**: The mod hooks in when the first scene loads (GameStart).
 2. **Finds All Pipelines**: The following function `Resources.FindObjectsOfTypeAll<UniversalRenderPipelineAsset>()` is called to search for every URP asset.
-3. **Targets the PC Pipeline**: Loops through the list and checks each pipeline’s name. When it finds `Ultra_PipelineAsset`—the one *Synth Riders* uses for PC—it stops there.
+3. **Targets the PC Pipeline**: Loops through the list and checks each pipeline’s name. Specifically matches `Ultra_PipelineAsset`—the one *Synth Riders* uses for PC—it stops there.
 4. **Checks MSAA**: Prints the current/cold-boot MSAA setting (e.g., 4 for `4x`) to the MelonLoader console.
 5. **Disables MSAA**: If MSAA isn’t already off, the mod sets it to `Disabled` (value 1), prints the change to console, and stops.
 6. **Skips if Not Found**: If `Ultra_PipelineAsset` isn’t there (rare), it prints a message and quits trying (i think).
